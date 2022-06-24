@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__tittle-wrapper">
+        <img
+          src="./assets/splitter.svg"
+          class="container__tittle"
+          alt="logo "
+        />
+      </div>
+      <div class="tip">
+          <form action="" class="tip__form" id="form">
+        <div class="layout__wrapper">
+            <div class="tip__wrapper">
+              <label class="tip__label" for="payout">Bill</label>
+              <div class="tip__icon-wrapper">
+                <img src="./assets/money.svg" alt="" class="" />
+                <input
+                  type="text"
+                  class="tip__payout"
+                  id="payout"
+                  value="142.55"
+                />
+              </div>
+            </div>
+  
+            <div class="tip__wrapper">
+              <span class="tip__label">Select Tip %</span>
+              <div class="tip__percentage-wrapper">
+                <button class="tip__percentage" id="five">5%</button>
+                <button class="tip__percentage" id="ten">10%</button>
+                <button class="tip__percentage" id="fifteen">15%</button>
+                <button class="tip__percentage" id="twenty-five">25%</button>
+                <button class="tip__percentage" id="fifty">50%</button>
+                <input
+                  type="text"
+                  class="tip__custom"
+                  placeholder="Custom"
+                  id="custom"
+                />
+              </div>
+            </div>
+            <div class="tip__wrapper">
+              <label class="tip__label" for="people">Number of People</label>
+              <div class="tip__icon-wrapper">
+                <img src="./assets/person.svg" alt="" />
+                <input type="text" class="tip__people" id="people" />
+              </div>
+        </div>
+
+            </div>
+
+            <div class="tip__wrapper tip__wrapper--green">
+              <div class="tip__amount-total">
+                <div>
+                  <span>Tip Amount</span>
+                  <span>/ person</span>
+                </div>
+                <span class="tip__result" id="amount">$4.27</span>
+              </div>
+
+              <div class="tip__amount-total">
+                <div>
+                  <span>Total</span>
+                  <span>/ person</span>
+                </div>
+                <span class="tip__result" id="total">$32.79</span>
+              </div>
+              <button type="submit" class="tip__reset" id="reset">RESET</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
