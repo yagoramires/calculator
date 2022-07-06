@@ -26,20 +26,27 @@
           <form action="" class="tip__form" id="form">
         <div class="layout__wrapper">
             <div class="tip__wrapper">
-              <label class="tip__label" for="payout">Bill</label>
+              <label class="tip__label" for="payout">Total da Conta</label>
               <div class="tip__icon-wrapper">
                 <img src="./assets/money.svg" alt="" class="" />
                 <input
                   type="text"
                   class="tip__payout"
                   id="payout"
-                  value="142.55"
+                  placeholder="0.00"
                 />
               </div>
             </div>
-  
+
             <div class="tip__wrapper">
-              <span class="tip__label">Select Tip %</span>
+              <label class="tip__label" for="people">Numero de Pessoas</label>
+              <div class="tip__icon-wrapper">
+                <img src="./assets/person.svg" alt="" />
+                <input type="text" class="tip__people" id="people" placeholder="0"/>
+              </div>
+                
+            <div class="tip__wrapper">
+              <span class="tip__label">Selecionar Percentual %</span>
               <div class="tip__percentage-wrapper">
                 <button class="tip__percentage" id="five">5%</button>
                 <button class="tip__percentage" id="ten">10%</button>
@@ -49,17 +56,11 @@
                 <input
                   type="text"
                   class="tip__custom"
-                  placeholder="Custom"
+                  placeholder="Outro"
                   id="custom"
                 />
               </div>
             </div>
-            <div class="tip__wrapper">
-              <label class="tip__label" for="people">Number of People</label>
-              <div class="tip__icon-wrapper">
-                <img src="./assets/person.svg" alt="" />
-                <input type="text" class="tip__people" id="people" />
-              </div>
         </div>
 
             </div>
@@ -67,25 +68,26 @@
             <div class="tip__wrapper tip__wrapper--green">
               <div class="tip__amount-total">
                 <div>
-                  <span>Tip Amount</span>
-                  <span>/ person</span>
+                  <span>Serviço</span>
+                  <span>/ pessoa</span>
                 </div>
-                <span class="tip__result" id="amount">$4.27</span>
+                <span class="tip__result" id="amount">R$ 0,00</span>
               </div>
 
               <div class="tip__amount-total">
                 <div>
                   <span>Total</span>
-                  <span>/ person</span>
+                  <span> + serviço</span>
                 </div>
-                <span class="tip__result" id="total">$32.79</span>
+                <span class="tip__result" id="total">R$ 0,00</span>
               </div>
-              <button type="submit" class="tip__reset" id="reset">RESET</button>
+              <button type="submit" class="tip__reset" id="reset">RESETAR</button>
             </div>
 
           </div>
         </form>
       </div>
     </div>
+    <script src="./scripts.js"></script>
   </body>
 </html>
